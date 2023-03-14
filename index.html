@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Facebook likes</title>
+
+        <style>
+            .toshow {
+                padding: 1.5rem;
+                background-color: aliceblue;
+                width: 14rem;
+            }
+            div > button {
+                cursor: pointer;
+                padding: 4px;
+            }
+
+            div > div.reactions {
+                margin-top: 10px;
+            }
+
+            div > div.reactions > button[data-item="like"] {
+                font-size: 12px;
+                padding: 4px 10px;
+                background: rgba(9, 9, 194, 0.3);
+                color: #1b74e4;
+                border: none;
+                border-radius: 25px;
+            }
+
+            div > div.reactions > button[data-item="love"] {
+                font-size: 12px;
+                padding: 4px 10px;
+                background: rgba(194, 9, 80, 0.3);
+                color: #f33e58;
+                border: none;
+                border-radius: 25px;
+            }
+
+            div > div.reactions > button[data-item="laugh"] {
+                font-size: 12px;
+                padding: 4px 10px;
+                background: rgba(194, 169, 9, 0.3);
+                color: #F7B928;
+                border: none;
+                border-radius: 25px;
+            }
+
+            div > div.reactions > button[data-item="grrr"] {
+                font-size: 12px;
+                padding: 4px 10px;
+                background: rgba(194, 89, 9, 0.3);
+                color: rgb(194, 89, 9);
+                border: none;
+                border-radius: 25px;
+            }
+
+            .react {
+                padding: 3px;
+            }
+
+            img {
+                width: 10px;
+            }
+
+            span.reactCounts {
+                font-size: xx-small;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="toshow">
+            <button id="pressButton">hover</button>
+            <div class="reactions">
+                <button data-item="like">J'aime</button>
+                <button data-item="love">J'adore</button>
+                <button data-item="laugh">Haha</button>
+                <button data-item="grrr">Grrr</button>
+            </div>
+        </div>
+        <div class="reactionsResults">
+
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
